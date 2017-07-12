@@ -15,11 +15,13 @@ before_script:
   - 'npm install -g grunt-cli'
 
 script:
+  - npm test
   - npm run build.prod
 
 deploy:
   provider: pages
   skip_cleanup: true
+  fqdn: 'jennle.com'
   github_token: $GITHUB_TOKEN
   local_dir: dist
   on:
