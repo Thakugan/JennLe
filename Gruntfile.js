@@ -4,17 +4,22 @@ module.exports = function(grunt) {
         karma: {
           unit: {
             configFile: 'karma.conf.js',
-            background: true
+            background: true,
+            singleRun: false,
+            port: 9877
           },
           travis: {
             configFile: 'karma.conf.js',
             singleRun: true,
-            browsers: ['PhantomJS']
+            reporters: ['progress', 'junit'],
+            browsers: ['ChromeHeadless']
           }
         },
         watch: {
           karma: {
-            files: ['src/app/**/*.js', 'src/app/**/**/*.js'],
+            files: [
+              './src/test.ts'
+            ],
             tasks: ['karma:unit:run']
           }
         }
