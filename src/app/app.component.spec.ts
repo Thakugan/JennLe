@@ -1,6 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 import { JennNavbarComponent } from './jenn-navbar/jenn-navbar.component'
@@ -8,11 +9,14 @@ import { JennNavbarComponent } from './jenn-navbar/jenn-navbar.component'
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ NgbModule.forRoot() ],
+      imports: [ MDBBootstrapModule.forRoot() ],
       declarations: [
         AppComponent,
         JennNavbarComponent
       ],
+      schemas: [
+        NO_ERRORS_SCHEMA
+      ]
     }).compileComponents();
   }));
 

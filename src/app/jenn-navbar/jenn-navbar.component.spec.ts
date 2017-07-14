@@ -1,4 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { JennNavbarComponent } from './jenn-navbar.component';
 
@@ -10,7 +13,11 @@ describe('JennNavbarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ JennNavbarComponent ]
+      imports: [ MDBBootstrapModule.forRoot() ],
+      declarations: [ JennNavbarComponent ],
+      schemas: [
+        NO_ERRORS_SCHEMA
+      ]
     })
     .compileComponents();
   }));
