@@ -1,3 +1,10 @@
-<p>
-  jenn-navbar works!
-</p>
+<navbar SideClass="navbar navbar-toggleable-md light white z-depth-0">
+    <logo><a class="logo navbar-brand" href="#">{{title}}</a></logo>
+    <links>
+        <ul class="navbar-nav mr-auto">
+          <li *ngFor="let page of pages" class="nav-item">
+            <a class="nav-link">{{page.name}}</a>
+          </li>
+        </ul>
+    </links>
+</navbar>

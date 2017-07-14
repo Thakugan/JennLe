@@ -1,0 +1,25 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+navbar {
+  padding: $nav-padding-sm;
+  font-family: $base-font;
+  font-weight: $font-weight-light;
+
+  .navbar-brand, .nav-link {
+    // display: inline-block;
+    color: $navbar-text-color;
+    vertical-align: bottom;
+  }
+
+  .navbar-brand {
+    font-size: $title-font-size;
+  }
+
+  .nav-item {
+    font-size: $nav-link-font-size;
+  }
+
+}
+
+@import "../../scss/utilities";
