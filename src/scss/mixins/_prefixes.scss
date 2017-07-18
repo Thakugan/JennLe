@@ -5,3 +5,9 @@
   -o-transition: $arg;
   transition: $arg;
 }
+
+@mixin linear-gradient($dir, $arg1, $arg2) {
+  background: $arg2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient($dir, $arg1, $arg2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient($dir, $arg1, $arg2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

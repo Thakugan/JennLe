@@ -1,21 +1,33 @@
 // Colors
 
-$navbar-text-color:     #d9a7c7 !default;
+$white:                 #fff !default;
+$kinda-black:           #212121 !default;
+
+// Color Scheme
+$teal:                  #43c6ac !default;
+$blue:                  #191654 !default;
+$coral:                 #f88379 !default;
+
+$about-color-1:         $teal !default;
+$about-color-2:         $blue !default;
+
+$navbar-text-color:     $about-color-1 !default;
 
 // Fonts
 $base-font:             "Nunito", sans-serif;
 
 $font-weight-light:     300 !default;
 
-$title-font-size:       2rem !default;
+$title-font-size:       1.825rem !default;
 $nav-link-font-size:    1rem !default;
 
 // Formatting
 
-$nav-padding:           6rem 5rem !default;
-$nav-padding-sm:        1rem 0 !default;
+$nav-top-padding:       .25rem !default;
+$nav-left-padding:      0 !default;
 
 $about-padding:         0 !default;
-$about-height:          30rem !default;
+$about-height:          31rem !default;
+$about-margin:          6rem !default;
 
 // Accordian

@@ -2,14 +2,11 @@
 @import "../../scss/mixins";
 
 navbar {
-  padding: $nav-padding-sm;
   font-family: $base-font;
   font-weight: $font-weight-light;
 
   .navbar-brand, .nav-link {
-    // display: inline-block;
-    color: $navbar-text-color;
-    vertical-align: bottom;
+    color: $kinda-black;
   }
 
   .navbar-brand {

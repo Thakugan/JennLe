@@ -15,8 +15,9 @@
 
 // Large
 @media (min-width: 992px) {
-  navbar {
-    padding: $nav-padding;
+  .navbar-brand, .nav-link {
+    padding-top: $nav-top-padding;
+    padding-left: $nav-left-padding;
   }
 }
 

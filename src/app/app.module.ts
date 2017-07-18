@@ -7,12 +7,14 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { JennNavbarComponent } from './jenn-navbar/jenn-navbar.component';
 import { JennAboutComponent } from './jenn-about/jenn-about.component';
+import { JennAboutContentComponent } from './jenn-about/jenn-about-content/jenn-about-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JennNavbarComponent,
-    JennAboutComponent
+    JennAboutComponent,
+    JennAboutContentComponent
   ],
   imports: [
     BrowserModule,
