@@ -9,7 +9,7 @@
     "test": "grunt test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build.prod": "ng build --aot --prod --progress false --base-href \"https://thakugan.github.io/JennLe/\""
+    "build.prod": "ng build --aot --prod --progress false --base-href \"https://jennle.com/\""
   },
   "private": true,
   "dependencies": {
