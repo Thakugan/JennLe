@@ -5,6 +5,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 import { JennNavbarComponent } from './jenn-navbar/jenn-navbar.component'
+import { JennAboutComponent } from './jenn-about/jenn-about.component';
+import { JennAboutMeComponent } from './jenn-about/jenn-about-me/jenn-about-me.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -12,7 +14,9 @@ describe('AppComponent', () => {
       imports: [ MDBBootstrapModule.forRoot() ],
       declarations: [
         AppComponent,
-        JennNavbarComponent
+        JennNavbarComponent,
+        JennAboutComponent,
+        JennAboutMeComponent
       ],
       schemas: [
         NO_ERRORS_SCHEMA
