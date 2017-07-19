@@ -1,1 +1,7 @@
 @import "../scss/variables";
+
+.site-body {
+  margin-top: $body-top-margin-sm;
+}
+
+@import "../scss/utilities";

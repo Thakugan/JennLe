@@ -4,23 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
+import { AppRoutingModule } from './modules/app-routing/app-routing.module';
+
 import { AppComponent } from './app.component';
 import { JennNavbarComponent } from './jenn-navbar/jenn-navbar.component';
 import { JennAboutComponent } from './jenn-about/jenn-about.component';
-import { JennAboutContentComponent } from './jenn-about/jenn-about-content/jenn-about-content.component';
+import { JennAboutMeComponent } from './jenn-about/jenn-about-me/jenn-about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JennNavbarComponent,
     JennAboutComponent,
-    JennAboutContentComponent
+    JennAboutMeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

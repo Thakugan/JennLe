@@ -15,6 +15,10 @@
 
 // Large
 @media (min-width: 992px) {
+  .site-body {
+    margin-top: $body-top-margin-lg;
+  }
+
   .navbar-brand, .nav-link {
     padding-top: $nav-top-padding;
     padding-left: $nav-left-padding;
