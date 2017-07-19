@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Mac OS X 0.0.0)" package="unit" timestamp="2017-07-19T03:47:16" id="0" hostname="Jenns-MacBook-Pro.local" tests="7" errors="0" failures="0" time="0.709">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.267" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.AppComponent"/>
+  <testcase name="JennAboutMeComponent should be created" time="0.039" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.JennAboutMeComponent"/>
+  <testcase name="JennAboutComponent should be created" time="0.033" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.JennAboutComponent"/>
+  <testcase name="JennNavbarComponent should be created" time="0.105" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.JennNavbarComponent"/>
+  <testcase name="JennNavbarComponent The Component UI should have title as 'Jenn Le'" time="0.098" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.JennNavbarComponent"/>
+  <testcase name="JennNavbarComponent The Component UI should render title in a navbar-brand" time="0.086" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.JennNavbarComponent"/>
+  <testcase name="JennNavbarComponent The Component UI should render all the page links as nav-items" time="0.081" classname="PhantomJS_2_1_1_(Mac_OS_X_0_0_0).unit.JennNavbarComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
