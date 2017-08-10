@@ -24,10 +24,4 @@ describe('JennAboutMeComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
-
-  it('should render the working confirmation', () => {
-    let content = compiled.querySelector('p')
-                    .textContent;
-    expect(content).toContain("jenn-about-me works!");
-  });
 });

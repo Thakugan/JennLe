@@ -21,6 +21,13 @@ $font-weight-light:     300 !default;
 $title-font-size:       1.825rem !default;
 $nav-link-font-size:    1rem !default;
 
+$about-h1-size:         2rem !default;
+$about-h2-size:         1.5rem !default;
+$about-h3-size:         1.25rem !default;
+$about-p-size:          .825rem !default;
+
+$about-p-line-height:   .25rem !default;
+
 // Formatting
 
 $nav-top-padding:       .25rem !default;
@@ -31,6 +38,9 @@ $body-top-margin-lg:    6rem !default;
 
 $about-padding:         0 !default;
 $about-height:          31rem !default;
+$about-width:           150rem !default;
 $about-margin:          6rem !default;
+
+$about-card-width:      35rem !default;
 
 // Accordian

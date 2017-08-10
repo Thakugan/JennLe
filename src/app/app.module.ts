@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { JennNavbarComponent } from './jenn-navbar/jenn-navbar.component';
 import { JennAboutComponent } from './jenn-about/jenn-about.component';
 import { JennAboutMeComponent } from './jenn-about/jenn-about-me/jenn-about-me.component';
+import { JennAboutWorkComponent } from './jenn-about/jenn-about-work/jenn-about-work.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JennNavbarComponent,
     JennAboutComponent,
-    JennAboutMeComponent
+    JennAboutMeComponent,
+    JennAboutWorkComponent
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,21 @@
     padding-top: $nav-top-padding;
     padding-left: $nav-left-padding;
   }
+
+  .wrapper {
+    position: relative;
+    overflow: auto;
+  }
+
+  .content {
+    position: absolute;
+    width: $about-width;
+  }
+
+  .about-card {
+    float: left;
+    width: $about-card-width;
+  }
 }
 
 // X-Large
