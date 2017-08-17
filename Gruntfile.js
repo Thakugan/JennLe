@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             configFile: 'karma.conf.js',
             singleRun: true,
             reporters: ['progress', 'junit'],
-            browsers: ['PhantomJS'],
+            browsers: ['ChromeHeadless'],
             port: 9877
           }
         },

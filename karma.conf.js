@@ -41,7 +41,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Safari', 'Chrome'],
+    browsers: ['Safari', 'Chrome', 'ChromeHeadless'],
     singleRun: false
   });
 };
