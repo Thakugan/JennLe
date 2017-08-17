@@ -22,7 +22,7 @@
         "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
         "../node_modules/angular-bootstrap-md/scss/mdb.scss",
-        "./styles.scss"
+        "styles.scss"
       ],
       "scripts": [
         "../node_modules/chart.js/dist/Chart.min.js",
@@ -38,7 +38,7 @@
   ],
   "e2e": {
     "protractor": {
-      "config": "./protractor.conf.js"
+      "config": "protractor.conf.js"
     }
   },
   "lint": [
