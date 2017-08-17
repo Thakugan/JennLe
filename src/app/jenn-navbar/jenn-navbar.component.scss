@@ -6,6 +6,7 @@ navbar {
   font-weight: $font-weight-light;
 
   .navbar-brand, .nav-link {
+    font-family: $header-font;
     color: $kinda-black;
   }
 

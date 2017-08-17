@@ -2,20 +2,31 @@
 @import "../../../scss/mixins";
 
 h1 {
+  font-family: $header-font;
   font-size: $about-h1-size;
 }
 
 h2 {
+  font-family: $header-font;
   font-size: $about-h2-size;
 }
 
 h3 {
+  font-family: $header-font;
   font-size: $about-h3-size;
 }
 
 p {
   font-size: $about-p-size;
   line-height: $about-p-line-height;
+}
+
+img {
+  display: inline-block;
+  width: auto;
+  max-width: $pic-width;
+  height: auto;
+  max-height: $pic-height;
 }
 
 @import "../../../scss/utilities";

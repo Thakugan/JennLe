@@ -1,12 +1,18 @@
 // Colors
 
 $white:                 #fff !default;
-$kinda-black:           #212121 !default;
+$kinda-black:           #808080 !default;
 
 // Color Scheme
 $teal:                  #43c6ac !default;
 $blue:                  #191654 !default;
 $coral:                 #f88379 !default;
+
+$turqoise-flow-1:       #136a8a !default;
+$turqoise-flow-2:       #267871 !default;
+
+$broken-hearts-1:       #d9a7c7 !default;
+$broken-hearts-2:       #fffcdc !default;
 
 $about-color-1:         $teal !default;
 $about-color-2:         $blue !default;
@@ -15,6 +21,7 @@ $navbar-text-color:     $about-color-1 !default;
 
 // Fonts
 $base-font:             "Nunito", sans-serif;
+$header-font:           "Raleway", sans-serif;
 
 $font-weight-light:     300 !default;
 
@@ -37,10 +44,16 @@ $body-top-margin-sm:    2rem !default;
 $body-top-margin-lg:    6rem !default;
 
 $about-padding:         0 !default;
-$about-height:          31rem !default;
+$about-height:          25rem !default;
 $about-width:           150rem !default;
 $about-margin:          6rem !default;
 
 $about-card-width:      35rem !default;
+
+$intro-width:           60rem !default;
+
+$pic-width:             20rem !default;
+$pic-height:            15rem !default;
+$pic-padding-left:      10rem !default;
 
 // Accordian
