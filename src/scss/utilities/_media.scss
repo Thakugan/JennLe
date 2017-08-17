@@ -12,17 +12,6 @@
 
 // Medium
 @media (min-width: 768px) {
-
-}
-
-@media (max-width: 991px) {
-  .background {
-    @include linear-gradient(to down, $broken-hearts-1, $broken-hearts-2);
-  }
-}
-
-// Large
-@media (min-width: 992px) {
   .site-body {
     margin-top: $body-top-margin-lg;
   }
@@ -53,6 +42,17 @@
     width: $intro-width;
     padding-left: $pic-padding-left;
   }
+}
+
+@media (max-width: 991px) {
+  .background {
+    @include linear-gradient(to down, $broken-hearts-1, $broken-hearts-2);
+  }
+}
+
+// Large
+@media (min-width: 992px) {
+
 }
 
 // X-Large
