@@ -1,3 +1,5 @@
+@import "../mixins";
+
 // Small
 @media (min-width: 576px) {
 
@@ -11,6 +13,12 @@
 // Medium
 @media (min-width: 768px) {
 
+}
+
+@media (max-width: 991px) {
+  .background {
+    @include linear-gradient(to down, $broken-hearts-1, $broken-hearts-2);
+  }
 }
 
 // Large
@@ -32,11 +40,18 @@
   .content {
     position: absolute;
     width: $about-width;
+    height: $about-height;
+    @include linear-gradient(to right, $broken-hearts-1, $broken-hearts-2);
   }
 
   .about-card {
     float: left;
     width: $about-card-width;
+  }
+
+  jenn-about-me {
+    width: $intro-width;
+    padding-left: $pic-padding-left;
   }
 }
 

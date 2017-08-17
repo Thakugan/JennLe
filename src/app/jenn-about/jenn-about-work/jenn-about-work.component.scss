@@ -2,14 +2,17 @@
 @import "../../../scss/mixins";
 
 h1 {
+  font-family: $header-font;
   font-size: $about-h1-size;
 }
 
 h2 {
+  font-family: $header-font;
   font-size: $about-h2-size;
 }
 
 h3 {
+  font-family: $header-font;
   font-size: $about-h3-size;
 }
 
