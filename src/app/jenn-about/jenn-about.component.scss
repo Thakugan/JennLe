@@ -1,5 +1,10 @@
 @import "../../scss/variables";
-@import "../../scss/mixins";x
+@import "../../scss/mixins";
+
+.content {
+  color: $kinda-black;
+  @include linear-gradient(up, $broken-hearts-1, $broken-hearts-2);
+}
 
 .wrapper {
   width: 100%;
@@ -9,6 +14,7 @@
 .about-card {
   float: left;
   width: 100%;
+  background: none;
 }
 
 @import "../../scss/utilities";

@@ -41,6 +41,10 @@
   jenn-about-me {
     width: $intro-width;
     padding-left: $pic-padding-left;
+
+    .container-fluid {
+      margin-top: 0;
+    }
   }
 }
 
