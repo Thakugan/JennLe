@@ -1,7 +1,12 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
+.footer-wrapper {
+  width: 100%;
+}
+
 .about-footer {
+  width: 100%;
   height: $about-footer-height;
   margin-top: $about-footer-mobile-margin;
 }
