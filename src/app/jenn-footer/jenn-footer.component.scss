@@ -1,6 +1,15 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
+h5 {
+  color: $kinda-black;
+}
+
+img {
+  width: $social-icon-size;
+  height: $social-icon-size;
+}
+
 .footer-content {
   width: 100%;
 }
