@@ -7,7 +7,9 @@
 
 // Medium Down
 @media (max-width: 767px) {
-
+  .content {
+    box-shadow: none;
+  }
 }
 
 // Medium
@@ -30,12 +32,18 @@
     position: absolute;
     width: $about-width;
     height: $about-height;
+    min-height: $about-height-min;
     @include linear-gradient(to right, $broken-hearts-1, $broken-hearts-2);
   }
 
   .about-card {
     float: left;
     width: $about-card-width;
+  }
+
+  .about-footer {
+    position: fixed;
+    bottom: 10%;
   }
 
   jenn-about-me {
@@ -49,9 +57,7 @@
 }
 
 @media (max-width: 991px) {
-  .background {
-    @include linear-gradient(to down, $broken-hearts-1, $broken-hearts-2);
-  }
+
 }
 
 // Large

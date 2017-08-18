@@ -1,9 +1,15 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
+.about-footer {
+  height: $about-footer-height;
+  margin-top: $about-footer-mobile-margin;
+}
+
 .content {
+  overflow: auto;
   color: $kinda-black;
-  @include linear-gradient(up, $broken-hearts-1, $broken-hearts-2);
+  @include linear-gradient(180deg, $broken-hearts-1, $broken-hearts-2);
 }
 
 .wrapper {

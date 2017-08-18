@@ -45,7 +45,8 @@ $body-top-margin-sm:    2rem !default;
 $body-top-margin-lg:    6rem !default;
 
 $about-padding:         0 !default;
-$about-height:          25rem !default;
+$about-height:          50% !default;
+$about-height-min:      26rem !default;
 $about-width:           150rem !default;
 $about-margin:          6rem !default;
 
@@ -56,5 +57,10 @@ $intro-width:           60rem !default;
 $pic-width:             20rem !default;
 $pic-height:            15rem !default;
 $pic-padding-left:      10rem !default;
+
+$about-footer-height:   7rem !default;
+$about-footer-mobile-margin:     3rem !default;
+$about-footer-desktop-bottom:    3rem !default;
+$about-footer-desktop-bottom-min:   3rem !default;
 
 // Accordian
