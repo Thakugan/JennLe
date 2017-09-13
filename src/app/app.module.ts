@@ -12,6 +12,8 @@ import { JennAboutComponent } from './jenn-about/jenn-about.component';
 import { JennAboutMeComponent } from './jenn-about/jenn-about-me/jenn-about-me.component';
 import { JennAboutWorkComponent } from './jenn-about/jenn-about-work/jenn-about-work.component';
 import { JennFooterComponent } from './jenn-footer/jenn-footer.component';
+import { JennProjectsComponent } from './jenn-projects/jenn-projects.component';
+import { JennMiscComponent } from './jenn-misc/jenn-misc.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { JennFooterComponent } from './jenn-footer/jenn-footer.component';
     JennAboutComponent,
     JennAboutMeComponent,
     JennAboutWorkComponent,
-    JennFooterComponent
+    JennFooterComponent,
+    JennProjectsComponent,
+    JennMiscComponent
   ],
   imports: [
     BrowserModule,

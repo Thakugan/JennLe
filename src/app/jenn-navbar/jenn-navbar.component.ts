@@ -18,10 +18,6 @@ export class JennNavbarComponent implements OnInit {
     {
       name: "projects",
       link: "/projects"
-    },
-    {
-      name: "misc",
-      link: "/misc"
     }
   ];
 

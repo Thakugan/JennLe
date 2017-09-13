@@ -23,6 +23,7 @@ $navbar-text-color:     $about-color-1 !default;
 $base-font:             "Nunito", sans-serif;
 $header-font:           "Raleway", sans-serif;
 
+$font-weight-normal:    400 !default;
 $font-weight-light:     300 !default;
 
 $title-font-size:       1.825rem !default;
@@ -51,17 +52,20 @@ $about-width:           150rem !default;
 $about-margin:          6rem !default;
 
 $about-card-width:      35rem !default;
+$work-card-padding:  2rem !default;
 
 $intro-width:           60rem !default;
 
-$pic-width:             20rem !default;
-$pic-height:            15rem !default;
+$pic-width:             17rem !default;
+$pic-height:            17rem !default;
 $pic-padding-left:      10rem !default;
 
 $about-footer-height:   7rem !default;
 $about-footer-mobile-margin:     2rem !default;
 $about-footer-desktop-bottom:    3rem !default;
 $about-footer-desktop-bottom-min:   3rem !default;
+
+$projects-margin-top:   5rem !default;
 
 $social-icon-size:      1.5rem !default;
 

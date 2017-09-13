@@ -1,0 +1,14 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.jumbotron {
+  margin-top: $projects-margin-top;
+  box-shadow: none;
+  @include linear-gradient(to right, $broken-hearts-1, $broken-hearts-2);
+
+  h1 {
+    font-family: $header-font;
+  }
+}
+
+@import "../../scss/utilities";

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { JennNavbarComponent } from './jenn-navbar/jenn-navbar.component'
 import { JennAboutComponent } from './jenn-about/jenn-about.component';
 import { JennAboutMeComponent } from './jenn-about/jenn-about-me/jenn-about-me.component';
+import { JennProjectsComponent } from './jenn-projects/jenn-projects.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -16,7 +17,8 @@ describe('AppComponent', () => {
         AppComponent,
         JennNavbarComponent,
         JennAboutComponent,
-        JennAboutMeComponent
+        JennAboutMeComponent,
+        JennProjectsComponent
       ],
       schemas: [
         NO_ERRORS_SCHEMA

@@ -21,4 +21,8 @@ p {
   line-height: $about-p-line-height;
 }
 
+.container {
+  padding: 0 $work-card-padding;
+}
+
 @import "../../../scss/utilities";
