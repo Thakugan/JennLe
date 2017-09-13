@@ -4,7 +4,7 @@
 .jumbotron {
   margin-top: $projects-margin-top;
   box-shadow: none;
-  @include linear-gradient(to right, $broken-hearts-1, $broken-hearts-2);
+  @include linear-gradient(to right, $broken-hearts-1, $broken-hearts-3);
 
   h1 {
     font-family: $header-font;
