@@ -5,13 +5,13 @@ const navbarInstance = (
   <Navbar className="jenn-nav">
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="#">Jenn Le</a>
+        <a>Jenn Le</a>
       </Navbar.Brand>
     </Navbar.Header>
     <Nav>
-      <NavItem eventKey={1} href="#">about</NavItem>
-      <NavItem eventKey={2} href="#">projects</NavItem>
-      <NavItem eventKey={3} href="#">misc</NavItem>
+      <NavItem eventKey={1}>about</NavItem>
+      <NavItem eventKey={2}>projects</NavItem>
+      <NavItem eventKey={3}>misc</NavItem>
     </Nav>
   </Navbar>
 );
