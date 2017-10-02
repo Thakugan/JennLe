@@ -10,11 +10,9 @@ branches:
 cache:
   directories:
     - node_modules
-
-before_script:
-  - 'npm install -g grunt-cli'
-
+    
 script:
+  - grunt
   - npm test
   - npm run build
 
