@@ -1,12 +1,17 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *::before, *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
 
 body {
   padding: 0;
   margin: 0;
-  font-family: sans-serif; }
-
-/*# sourceMappingURL=jenn-styles.css.map */
+  font-family: sans-serif;
+}

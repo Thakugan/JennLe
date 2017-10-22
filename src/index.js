@@ -1,16 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './jenn-styles.min.css';
-import registerServiceWorker from 'registerServiceWorker';
-
-// Bootstrap
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './jenn-styles.css'
+import registerServiceWorker from './registerServiceWorker'
 
 // Containers
-import NavbarInstance from 'Nav';
-import Home from 'Home';
+import App from './containers/App'
 
-ReactDOM.render(<NavbarInstance />, document.getElementById('nav'));
-ReactDOM.render(<Home />, document.getElementById('page'));
+ReactDOM.render(<App />, document.getElementById('app'));
 registerServiceWorker();

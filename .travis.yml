@@ -10,13 +10,10 @@ branches:
 cache:
   directories:
     - node_modules
-
-before_install:
-  - gem install sass
-
+    
 script:
   - grunt
-  - npm test
+  - npm run test-ci
   - npm run build
 
 deploy:
