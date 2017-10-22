@@ -10,9 +10,8 @@ branches:
 cache:
   directories:
     - node_modules
-    
+
 script:
-  - grunt
   - npm run test-ci
   - npm run build
 
