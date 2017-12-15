@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 const styles = {
   activeCard: {
     color: '#FFF',
-    fontFamily: '"Roboto", sans-serif',
+    fontFamily: '"Roboto", sans-serif'
   }
 }
 
@@ -17,10 +17,9 @@ class About extends Component {
 
   render() {
     return(
-      <div className='container'>
-        <div className='align-middle mt-5' style={styles.activeCard}>
+      <div className='container align-items-center' style={styles.about}>
+        <div className='align-items-center mt-5' style={styles.activeCard}>
           <h1>Hi, I&apos;m Jenn</h1>
-          <p>This website is very slowly being recreated</p>
         </div>
       </div>
     );
