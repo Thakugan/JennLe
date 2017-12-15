@@ -42,7 +42,7 @@ class Navigation extends Component {
                 <a className="nav-link" style={styles.text}>Projects</a>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" style={styles.text} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" href=".navbar" style={styles.text} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Notebooks
                 </a>
                 <div className="dropdown-menu" style={styles.dropdown} aria-labelledby="navbarDropdown">
