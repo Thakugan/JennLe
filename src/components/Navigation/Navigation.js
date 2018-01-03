@@ -1,8 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import '../../styles/Navigation.css';
 
 const styles = {
   nav: {
-    backgroundColor: 'rgba(255,255,255,.2)',
+    backgroundColor: 'rgba(255,255,255,0)',
     margin: '0'
   },
   title: {
@@ -17,7 +19,7 @@ const styles = {
     opacity: '.8'
   },
   dropdown: {
-    backgroundColor: 'rgba(255,255,255,.2)',
+    backgroundColor: 'rgba(255,255,255,0.1)',
     border: 'none',
     borderRadius: '0',
   }
@@ -26,20 +28,31 @@ const styles = {
 class Navigation extends Component {
   render() {
     return(
-      <nav className="navbar navbar-expand-md navbar-light" style={styles.nav}>
+      <nav className="navbar navbar-expand-md navbar-light text-center" style={styles.nav}>
         <div className="container">
-          <a className="navbar-brand" style={styles.title}>Jenn Le</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav mx-auto">
               <li className="nav-item active">
-                <a className="nav-link" style={styles.text}>About</a>
+                <Link
+                  className="nav-link"
+                  to={'/'}
+                  style={styles.text}
+                >
+                  About
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" style={styles.text}>Projects</a>
+                <Link
+                  className="nav-link"
+                  to={'/projects'}
+                  style={styles.text}
+                >
+                  Projects
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href=".navbar" style={styles.text} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
