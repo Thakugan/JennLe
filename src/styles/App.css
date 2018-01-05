@@ -1,29 +1,23 @@
 body {
-  background-image: url(https://res.cloudinary.com/thakugan/image/upload/v1509387068/1_cdjgak.jpg);
-  /* background-color: #0F0F43; */
+  /* background-image: url(https://res.cloudinary.com/thakugan/image/upload/v1509387068/1_cdjgak.jpg); */
+  background-color: #FFF;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  color: black;
   -webkit-transition: background-image 100ms ease-in-out;
   /* property duration timing-function delay */
   -moz-transition: background-image 100ms ease-in-out;
   -o-transition: background-image 100ms ease-in-out;
   transition: background-image 100ms ease-in-out;
-}
-
-.blurredBG {
-  background-image: url(https://res.cloudinary.com/thakugan/image/upload/e_blur:800/v1509387068/1_cdjgak.jpg);
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
 }
 
 .navbar-toggler {

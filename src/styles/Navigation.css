@@ -1,13 +1,35 @@
-.dropdown-item:hover {
-  background-color: rgba(0, 0, 0, 0);
+.navbar .dropdown-item {
+  color: white;
+  font-weight: 300;
 }
 
-a {
+.navbar .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar a {
   background: none;
   border: none;
 }
 
-.material-icons.md-light {
+.navbar a:hover {
+  cursor: pointer;
+}
+
+.navbar .material-icons.md-light {
   color: rgba(255, 255, 255, .7);
   font-size: 36px;
+}
+
+.navbar nav {
+  color: #000;
+}
+
+.navbar .active {
+  color: #000;
+}
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
 }

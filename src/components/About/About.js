@@ -33,33 +33,35 @@ class About extends Component {
       main: false
     });
 
-    switch (page) {
-      case 0:
-        this.setState({pages: [true, false, false]});
-        break;
-      case 1:
-        this.setState({pages: [false, true, false]});
-        break;
-      case 2:
-        this.setState({pages: [false, false, true]});
-        break;
-      default:
-    }
+    let pages = this.state.pages;
+    pages[page] = true;
+
+    // update state
+    this.setState({
+        pages
+    });
   }
 
-  closePage() {
+  closePage(page) {
     document.body.classList.remove('blurredBG');
 
     this.setState({
       nav: true,
-      main: true,
-      pages: [false, false, false]
+      main: true
+    });
+
+    let pages = this.state.pages;
+    pages[page] = false;
+
+    // update state
+    this.setState({
+        pages
     });
   }
 
   render() {
     return(
-      <div>
+      <div className='about'>
         {this.state.nav ? <Navigation /> : null}
         {this.state.main ?
           <div className='container'>
@@ -70,7 +72,7 @@ class About extends Component {
               <p className='lead'>
                 {this.state.tagline.toUpperCase()}
               </p>
-              <div className='container'>
+              <div>
                 <FrameButton className='col-12-sm'
                 onClick={() => this.openPage(0)}>
                   Intro
@@ -111,17 +113,17 @@ class About extends Component {
 
         {this.state.pages[0] ?
           <ReactCSSTransitionGroup transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
-            <Intro onClick={() => this.closePage()} />
+            <Intro onClick={() => this.closePage(0)} />
           </ReactCSSTransitionGroup>
          : null}
         {this.state.pages[1] ?
           <ReactCSSTransitionGroup transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
-            <Skills onClick={() => this.closePage()} />
+            <Skills onClick={() => this.closePage(1)} />
           </ReactCSSTransitionGroup>
          : null}
         {this.state.pages[2] ?
           <ReactCSSTransitionGroup transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
-            <Hobbies onClick={() => this.closePage()} />
+            <Hobbies onClick={() => this.closePage(2)} />
           </ReactCSSTransitionGroup>
          : null}
       </div>

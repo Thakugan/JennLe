@@ -8,6 +8,12 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 
 class App extends Component {
+  componentDidMount() {
+    if (this.props.dark) {
+      document.body.classList.toggle('darkBG');
+    }
+  }
+
   render() {
     return(
         <div className='app'>

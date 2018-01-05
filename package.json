@@ -12,14 +12,17 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "bootstrap": "^4.0.0-beta.2",
     "jquery": "^1.9.1",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1",
+    "react-jupyter": "^0.1.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.0.13",
+    "superagent": "^3.8.2"
   }
 }

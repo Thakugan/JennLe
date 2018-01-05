@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import '../../styles/Page.css';
 
-import myPic from './assets/me.JPG';
+// import myPic from './assets/me.JPG';
 
 const styles = {
   header: {
@@ -22,10 +22,9 @@ const styles = {
 class Intro extends Component {
   render() {
     return(
-      <div className='container page mt-5 mb-5'>
-        <a className='close' onClick={this.props.onClick}
-         style={{display: 'block'}}>
-          X
+      <div className='container page mt-2 mb-2'>
+        <a className='close' onClick={this.props.onClick}>
+          <i className="material-icons">close</i>
         </a>
         <br />
         <div className='container'>
@@ -35,9 +34,6 @@ class Intro extends Component {
           <h2 style={styles.line}>
             _______________
           </h2>
-          <img src={myPic} alt=''
-           className='img-fluid rounded mt-5'
-           style={styles.pic} />
         </div>
       </div>
     );

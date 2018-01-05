@@ -1,0 +1,60 @@
+.jupyter {
+  border: .0625rem solid #eaecee;
+  background-color: #fff;
+  padding: 60px 90px;
+  min-height: 400px;
+}
+
+.jupyter .markdown-cell {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.jupyter h1, .jupyter h2, .jupyter h3, .jupyter h4, .jupyter h5, .jupyter h6 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+}
+
+.jupyter h1 {
+  font-size: 2rem
+}
+
+.jupyter h2 {
+  font-size: 1.825rem
+}
+
+.jupyter h3 {
+  font-size: 1.75rem
+}
+
+.jupyter h4 {
+  font-size: 1.5rem
+}
+
+.jupyter h5 {
+  font-size: 1.25rem
+}
+
+.jupyter h6 {
+  font-size: 1.125rem
+}
+
+.jupyter .close {
+  padding: 0;
+}
+
+.jupyter a:hover {
+  cursor: pointer;
+}
+
+.jupyter .material-icons {
+  font-size: 2rem;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .jupyter .post {
+    padding: 15px 15px;
+  }
+}

@@ -15,18 +15,18 @@ const styles = {
 class Skills extends Component {
   render() {
     return(
-      <div className='container page mt-5 mb-5'>
+      <div className='container page mt-2 mb-2'>
         <a className='close' onClick={this.props.onClick}
          style={{display: 'block'}}>
-          X
+          <i className="material-icons">close</i>
         </a>
         <br />
         <div className='container'>
           <h2 style={styles.header}>
-            SKILLS
+            EXPERIENCE & SKILLS
           </h2>
           <h2 style={styles.line}>
-            _______________
+            ___________________________
           </h2>
         </div>
       </div>

@@ -9,17 +9,15 @@ const styles = {
   },
   title: {
     fontFamily: '"Raleway", sans-serif',
-    color: '#FFF',
     opacity: '.8'
   },
   text: {
     fontFamily: '"Roboto", sans-serif',
     fontWeight: "300",
-    color: '#FFF',
     opacity: '.8'
   },
   dropdown: {
-    backgroundColor: 'rgba(255,255,255,0.1)',
+    backgroundColor: 'rgba(0,0,0,0.8)',
     border: 'none',
     borderRadius: '0',
   }
@@ -39,8 +37,8 @@ class Navigation extends Component {
         <div className="container">
           <a className="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
           onClick={() => this.setState({navClosed: !this.state.navClosed})}>
-            {this.state.navClosed ? <i className="material-icons md-light">add</i> :
-             <i className="material-icons md-light">remove</i>}
+            {this.state.navClosed ? <i className="material-icons">add</i> :
+             <i className="material-icons">remove</i>}
           </a>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,7 +52,7 @@ class Navigation extends Component {
                   About
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item active">
                 <Link
                   className="nav-link"
                   to={'/projects'}
@@ -63,13 +61,13 @@ class Navigation extends Component {
                   Projects
                 </Link>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown active">
                 <a className="nav-link dropdown-toggle" href=".navbar" style={styles.text} id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Notebooks
                 </a>
                 <div className="dropdown-menu" style={styles.dropdown} aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="https://compsci.jennle.com" style={styles.text}>Computer Science</a>
-                  <a className="dropdown-item" href="https://datascience.jennle.com" style={styles.text}>Data Science</a>
+                  <a className="dropdown-item" href="https://compsci.jennle.com">Computer Science</a>
+                  <a className="dropdown-item" href="https://datascience.jennle.com">Data Science</a>
                 </div>
               </li>
             </ul>

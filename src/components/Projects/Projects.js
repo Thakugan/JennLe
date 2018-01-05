@@ -1,25 +1,79 @@
 import React, { Component } from 'react';
 
 import Navigation from '../Navigation/Navigation';
+import JupyterNotebook from './JupyterNotebook';
+
+import '../../styles/Projects.css';
 
 const styles = {
   activeCard: {
-    color: '#FFF',
-    fontFamily: '"Roboto", sans-serif',
-    paddingTop: '3rem'
+    color: '#000',
+    fontFamily: '"Roboto", sans-serif'
   }
 }
 
 class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: 'Projects',
+      nav: true,
+      main: true,
+      pages: [false]
+    }
+  }
+
+  openPage(page) {
+    this.setState({
+      nav: false,
+      main: false
+    });
+
+    let pages = this.state.pages;
+    pages[page] = true;
+
+    // update state
+    this.setState({
+        pages
+    });
+  }
+
+  closePage(page) {
+    this.setState({
+      nav: true,
+      main: true
+    });
+
+    let pages = this.state.pages;
+    pages[page] = false;
+
+    // update state
+    this.setState({
+        pages
+    });
+  }
+
   render() {
     return (
-      <div>
-        <Navigation />
-        <div className='container'>
-          <div className='text-center' style={styles.activeCard}>
-            <h1>Projects</h1>
+      <div className='projects'>
+        {this.state.nav ? <Navigation /> : null}
+        {this.state.main ?
+          <div className='container'>
+            <div className='text-center mt-md-3 mb-md-3' style={styles.activeCard}>
+              <h1>{this.state.title}</h1>
+            </div>
+            <a><h3 onClick={() => this.openPage(0)}>Example Project</h3></a>
+            <p>
+              {"This is just one of my machine learning projects that I am using to test out jupyter notebook rendering. I'm just going to leave it here until I add more content."}
+            </p>
           </div>
-        </div>
+          : null
+        }
+
+        {this.state.pages[0] ?
+          <JupyterNotebook onClick={() => this.closePage(0)} url='https://raw.githubusercontent.com/Thakugan/machine-learning-notebooks/master/1-exploring-table-data/mushroom-hunting.ipynb' />
+          :null
+        }
       </div>
     );
   }
