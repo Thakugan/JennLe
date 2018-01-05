@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../../styles/About.css';
 
 import Navigation from '../Navigation/Navigation';
@@ -108,9 +109,21 @@ class About extends Component {
           : null
         }
 
-        {this.state.pages[0] ? <Intro onClick={() => this.closePage()} /> : null}
-        {this.state.pages[1] ? <Skills onClick={() => this.closePage()} /> : null}
-        {this.state.pages[2] ? <Hobbies onClick={() => this.closePage()} /> : null}
+        {this.state.pages[0] ?
+          <ReactCSSTransitionGroup transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
+            <Intro onClick={() => this.closePage()} />
+          </ReactCSSTransitionGroup>
+         : null}
+        {this.state.pages[1] ?
+          <ReactCSSTransitionGroup transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
+            <Skills onClick={() => this.closePage()} />
+          </ReactCSSTransitionGroup>
+         : null}
+        {this.state.pages[2] ?
+          <ReactCSSTransitionGroup transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
+            <Hobbies onClick={() => this.closePage()} />
+          </ReactCSSTransitionGroup>
+         : null}
       </div>
     );
   };

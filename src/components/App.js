@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+import '../styles/App.css';
+
 import About from './About/About';
 import Projects from './Projects/Projects';
 

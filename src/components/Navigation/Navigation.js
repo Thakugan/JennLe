@@ -26,12 +26,21 @@ const styles = {
 }
 
 class Navigation extends Component {
+  constructor() {
+    super();
+    this.state = {
+      navClosed: true
+    }
+  }
+
   render() {
     return(
       <nav className="navbar navbar-expand-md navbar-light text-center" style={styles.nav}>
         <div className="container">
-          <a className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+          <a className="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          onClick={() => this.setState({navClosed: !this.state.navClosed})}>
+            {this.state.navClosed ? <i className="material-icons md-light">add</i> :
+             <i className="material-icons md-light">remove</i>}
           </a>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
