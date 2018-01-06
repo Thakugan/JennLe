@@ -22,7 +22,7 @@ class JupyterNotebook extends Component {
     const { notebookJSON } = this.state;
 
     return(
-      <div className='jupyter container mt-md-3 mb-md-3'>
+      <div className='jupyter container'>
         <a className='close' onClick={this.props.onClick}>
           <i className="material-icons">close</i>
         </a>

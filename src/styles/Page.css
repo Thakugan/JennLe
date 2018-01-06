@@ -2,8 +2,7 @@
   border-radius: .5rem;
   color: black;
   font-family: 'Roboto', sans-serif;
-  /* width: 50%; */
-  padding: 2rem 1rem;
+  padding: 1rem 0;
 }
 
 .page a {
@@ -19,7 +18,18 @@
   font-weight: 400;
 }
 
+.page h2 {
+  padding-bottom: .25rem;
+  border-bottom: .125rem solid black;
+}
+
 .page .material-icons {
   font-size: 2rem;
   color: black;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 2rem 5rem;
+  }
 }

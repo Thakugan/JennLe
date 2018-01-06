@@ -25,9 +25,6 @@ class Hobbies extends Component {
           <h2 style={styles.header}>
             HOBBIES
           </h2>
-          <h2 style={styles.line}>
-            _______________
-          </h2>
         </div>
       </div>
     );

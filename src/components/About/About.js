@@ -64,7 +64,7 @@ class About extends Component {
       <div className='about'>
         {this.state.nav ? <Navigation /> : null}
         {this.state.main ?
-          <div className='container'>
+          <div>
             <div className='main text-center'>
               <h1 className='header display-3'>
                 {this.state.title}
@@ -72,16 +72,16 @@ class About extends Component {
               <p className='lead'>
                 {this.state.tagline.toUpperCase()}
               </p>
-              <div>
-                <FrameButton className='col-12-sm'
+              <div className='mt-md-5 menu'>
+                <FrameButton className='col-12'
                 onClick={() => this.openPage(0)}>
                   Intro
                 </FrameButton>
-                <FrameButton className='col-12-sm'
+                <FrameButton className='col-12'
                 onClick={() => this.openPage(1)}>
                   Experience & Skills
                 </FrameButton>
-                <FrameButton className='col-12-sm'
+                <FrameButton className='col-12'
                 onClick={() => this.openPage(2)}>
                   Hobbies
                 </FrameButton>

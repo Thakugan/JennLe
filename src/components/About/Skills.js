@@ -25,9 +25,6 @@ class Skills extends Component {
           <h2 style={styles.header}>
             EXPERIENCE & SKILLS
           </h2>
-          <h2 style={styles.line}>
-            ___________________________
-          </h2>
         </div>
       </div>
     );

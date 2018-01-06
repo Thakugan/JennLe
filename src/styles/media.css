@@ -1,0 +1,16 @@
+// Small
+@media (min-width: 576px) {}
+
+// Medium Down
+@media (max-width: 767px) {}
+
+// Medium
+@media (min-width: 768px) {}
+
+@media (max-width: 991px) {}
+
+// Large
+@media (min-width: 992px) {}
+
+// X-Large
+@media (min-width: 1200px) {}

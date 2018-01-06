@@ -5,6 +5,7 @@
 
 .navbar .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 1);
+  color: black;
 }
 
 .navbar a {
@@ -16,8 +17,9 @@
   cursor: pointer;
 }
 
-.navbar .material-icons.md-light {
-  color: rgba(255, 255, 255, .7);
+.navbar .material-icons {
+  padding-top: 1rem;
+  padding-bottom: 0;
   font-size: 36px;
 }
 
@@ -32,4 +34,8 @@
 .navbar {
   padding-left: 0;
   padding-right: 0;
+}
+
+.navbar .container {
+  width: 100%;
 }

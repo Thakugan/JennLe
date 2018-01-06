@@ -31,9 +31,6 @@ class Intro extends Component {
           <h2 style={styles.header}>
             INTRO
           </h2>
-          <h2 style={styles.line}>
-            _______________
-          </h2>
         </div>
       </div>
     );

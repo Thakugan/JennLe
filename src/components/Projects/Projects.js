@@ -19,7 +19,11 @@ class Projects extends Component {
       title: 'Projects',
       nav: true,
       main: true,
-      pages: [false]
+      pages: [
+
+        // Machine Learning CSE5324 Projects
+        false //Lab 1: Mushroom Hunting
+      ]
     }
   }
 
@@ -55,10 +59,10 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className='projects'>
+      <div>
         {this.state.nav ? <Navigation /> : null}
         {this.state.main ?
-          <div className='container'>
+          <div className='projects'>
             <div className='text-center mt-md-3 mb-md-3' style={styles.activeCard}>
               <h1>{this.state.title}</h1>
             </div>

@@ -16,7 +16,7 @@ class App extends Component {
 
   render() {
     return(
-        <div className='app'>
+        <div className='app container'>
           <ReactCSSTransitionGroup transitionName="anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
             <BrowserRouter>
               <div>

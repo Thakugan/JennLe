@@ -33,15 +33,15 @@ class Navigation extends Component {
 
   render() {
     return(
-      <nav className="navbar navbar-expand-md navbar-light text-center" style={styles.nav}>
+      <nav className="navbar navbar-expand-md navbar-light container" style={styles.nav}>
         <div className="container">
-          <a className="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          <a className="navbar-toggler float-left" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
           onClick={() => this.setState({navClosed: !this.state.navClosed})}>
             {this.state.navClosed ? <i className="material-icons">add</i> :
              <i className="material-icons">remove</i>}
           </a>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse text-center" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item active">
                 <Link

@@ -1,8 +1,23 @@
 .projects p {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 1rem;
+  font-weight: 200;
+}
+
+.projects h3 {
+  margin-top: 2rem;
+  text-decoration: underline;
 }
 
 .projects a:hover {
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding: 2rem 5rem;
+  }
+  .projects p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+  }
 }
