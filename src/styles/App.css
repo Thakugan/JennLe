@@ -46,6 +46,10 @@ body {
   width: auto;
 }
 
+a {
+  word-wrap: break-word;
+}
+
 p {
   font-size: 1em;
   line-height: 1.25em;
