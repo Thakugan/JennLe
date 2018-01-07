@@ -5,13 +5,6 @@ import '../../styles/Page.css';
 // import myPic from './assets/me.JPG';
 
 const styles = {
-  header: {
-    margin: '1rem 0rem 0rem 1rem'
-  },
-  line: {
-    margin: '0rem 0rem 0rem 1rem',
-    lineHeight: '.8rem'
-  },
   pic: {
     marginLeft: '1rem',
     maxHeight: '12rem',
@@ -28,7 +21,7 @@ class Intro extends Component {
         </a>
         <br />
         <div className='container'>
-          <h2 style={styles.header}>
+          <h2>
             INTRO
           </h2>
         </div>

@@ -1,14 +1,43 @@
-.projects p {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 200;
-}
-
 .projects h3 {
   margin-top: 2rem;
   text-decoration: underline;
 }
 
+.projects .datasci h2, .projects .compsci h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.projects .ds-menu, .projects .cs-menu {
+  height: 50vh;
+}
+
+.projects .menu-content {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
 .projects a:hover {
+  cursor: pointer;
+}
+
+.projects .menu-buttons {
+  margin-top: 2rem;
+}
+
+.projects .datasci, .projects .compsci {
+  height: 10rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-color: black;
+}
+
+.projects .datasci:hover, .projects .compsci:hover {
   cursor: pointer;
 }
 
@@ -19,5 +48,28 @@
   .projects p {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
+  }
+  .projects .menu-buttons {
+    margin-top: 5vh;
+  }
+  .projects .datasci, .projects .compsci {
+    height: 55vh;
+    padding: 1rem;
+  }
+  .projects .datasci {
+    margin-right: .5rem;
+  }
+  .projects .compsci {
+    margin-left: .5rem;
+  }
+  .projects .ds-menu, .projects .cs-menu {
+    height: 55vh;
+    padding: 1rem;
+  }
+  .projects .ds-menu {
+    margin-left: .5rem;
+  }
+  .projects .cs-menu {
+    margin-right: .5rem;
   }
 }

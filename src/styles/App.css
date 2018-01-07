@@ -20,6 +20,20 @@ body {
   box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
+
+/* optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
 .navbar-toggler {
   border: none;
 }
@@ -51,6 +65,8 @@ a {
 }
 
 p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
   font-size: 1em;
   line-height: 1.25em;
 }

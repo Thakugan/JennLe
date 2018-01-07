@@ -2,16 +2,6 @@ import React, { Component } from 'react';
 
 import '../../styles/Page.css';
 
-const styles = {
-  header: {
-    margin: '1rem 0rem 0rem 1rem'
-  },
-  line: {
-    margin: '0rem 0rem 0rem 1rem',
-    lineHeight: '.8rem'
-  }
-}
-
 class Skills extends Component {
   render() {
     return(
@@ -22,7 +12,7 @@ class Skills extends Component {
         </a>
         <br />
         <div className='container'>
-          <h2 style={styles.header}>
+          <h2>
             EXPERIENCE & SKILLS
           </h2>
         </div>

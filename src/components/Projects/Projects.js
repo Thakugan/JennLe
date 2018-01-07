@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import Navigation from '../Navigation/Navigation';
 import JupyterNotebook from './JupyterNotebook';
@@ -23,7 +24,9 @@ class Projects extends Component {
 
         // Machine Learning CSE5324 Projects
         false //Lab 1: Mushroom Hunting
-      ]
+      ],
+      datasciMenu: false,
+      compsciMenu: false
     }
   }
 
@@ -57,6 +60,25 @@ class Projects extends Component {
     });
   }
 
+  dsMenu() {
+    return(
+      <div className='container menu-content'>
+        <a><h3 onClick={() => this.openPage(0)}>Example Project</h3></a>
+        <p>
+          {"This is just one of my machine learning projects that I am using to test out jupyter notebook rendering. I'm just going to leave it here until I add more content."}
+        </p>
+      </div>
+    );
+  }
+
+  csMenu() {
+    return(
+      <div className='container menu-content'>
+        <p>Nothing here yet</p>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div>
@@ -66,10 +88,35 @@ class Projects extends Component {
             <div className='text-center mt-md-3 mb-md-3' style={styles.activeCard}>
               <h1>{this.state.title}</h1>
             </div>
-            <a><h3 onClick={() => this.openPage(0)}>Example Project</h3></a>
-            <p>
-              {"This is just one of my machine learning projects that I am using to test out jupyter notebook rendering. I'm just going to leave it here until I add more content."}
-            </p>
+
+            <div className='container row menu-buttons'>
+              { !this.state.compsciMenu ?
+                <ReactCSSTransitionGroup className='col-md datasci text-center' transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false} onClick={() => this.setState({datasciMenu: !this.state.datasciMenu})}>
+                  <h2>DATA SCIENCE</h2>
+                </ReactCSSTransitionGroup>
+                : null
+              }
+              { this.state.datasciMenu ?
+                <ReactCSSTransitionGroup className='col-md ds-menu text-center' transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
+                  <h2>Data Sci Menu</h2>
+                  {this.dsMenu()}
+                </ReactCSSTransitionGroup>
+                : null
+              }
+              { this.state.compsciMenu ?
+                <ReactCSSTransitionGroup className='col-md cs-menu text-center' transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
+                  <h2>Computer Science Menu</h2>
+                  {this.csMenu()}
+                </ReactCSSTransitionGroup>
+                : null
+              }
+              { !this.state.datasciMenu ?
+                <ReactCSSTransitionGroup className='col-md compsci text-center' transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false} onClick={() => this.setState({compsciMenu: !this.state.compsciMenu})}>
+                  <h2>COMPUTER SCIENCE</h2>
+                </ReactCSSTransitionGroup>
+                : null
+              }
+            </div>
           </div>
           : null
         }
