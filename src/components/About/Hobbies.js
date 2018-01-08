@@ -15,6 +15,7 @@ class Hobbies extends Component {
           <h2>
             HOBBIES
           </h2>
+  
         </div>
       </div>
     );

@@ -19,7 +19,7 @@
 .projects .menu-content {
   overflow: scroll;
   overflow-x: hidden;
-  height: 100%;
+  height: 50vh;
 }
 
 .projects a:hover {
