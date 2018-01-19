@@ -5,6 +5,9 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../styles/App.css';
 
 import About from './About/About';
+import Intro from './About/Intro';
+import Skills from './About/Skills';
+import Hobbies from './About/Hobbies';
 import Projects from './Projects/Projects';
 
 class App extends Component {
@@ -21,6 +24,9 @@ class App extends Component {
             <BrowserRouter>
               <div>
                 <Route exact path="/" component={About} />
+                <Route exact path="/intro" component={Intro} />
+                <Route exact path="/skills" component={Skills} />
+                <Route exact path="/hobbies" component={Hobbies} />
                 <Route exact path="/projects" component={Projects} />
               </div>
             </BrowserRouter>
