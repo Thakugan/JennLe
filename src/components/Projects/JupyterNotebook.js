@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Jupyter from 'react-jupyter';
-import request from 'superagent'
+import request from 'superagent';
+import { Link } from 'react-router-dom';
 
 import '../../styles/JupyterNotebook.css';
 
@@ -23,9 +24,9 @@ class JupyterNotebook extends Component {
 
     return(
       <div className='jupyter container'>
-        <a className='close' onClick={this.props.onClick}>
+        <Link to={'/projects'} className='close'>
           <i className="material-icons">close</i>
-        </a>
+        </Link>
         <br />
         { notebookJSON &&
           <Jupyter

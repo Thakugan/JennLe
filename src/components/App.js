@@ -27,7 +27,7 @@ class App extends Component {
                 <Route exact path="/intro" component={Intro} />
                 <Route exact path="/skills" component={Skills} />
                 <Route exact path="/hobbies" component={Hobbies} />
-                <Route exact path="/projects" component={Projects} />
+                <Route path="/projects" component={Projects} />
               </div>
             </BrowserRouter>
           </ReactCSSTransitionGroup>

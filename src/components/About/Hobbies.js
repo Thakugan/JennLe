@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { Link } from 'react-router-dom';
 
 import '../../styles/Page.css';
 
@@ -8,10 +9,9 @@ class Hobbies extends Component {
     return(
       <ReactCSSTransitionGroup transitionName="page-anim" transitionAppear={true} transitionAppearTimeout={5000} transitionEnter={false} transitionLeave={false}>
         <div className='container page mt-2 mb-2'>
-          <a className='close' onClick={this.props.history.goBack}
-           style={{display: 'block'}}>
+          <Link to={'/'} className='close'>
             <i className="material-icons">close</i>
-          </a>
+          </Link>
           <br />
           <div className='container'>
             <h2>
