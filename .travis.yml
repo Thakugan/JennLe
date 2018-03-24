@@ -12,7 +12,6 @@ cache:
     - node_modules
 
 script:
-  - npm run test-ci
   - npm run build
 
 deploy:
