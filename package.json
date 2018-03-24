@@ -1,28 +1,23 @@
 {
   "name": "jenn-le",
   "homepage": "http://jennle.com",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "jest",
-    "test-watch": "jest --watch",
-    "test-ci": "jest --runInBand",
-    "eject": "react-scripts eject"
-  },
+  "version": "1.0.0",
   "dependencies": {
-    "axios": "^0.17.1",
-    "bootstrap": "^4.0.0-beta.2",
-    "jquery": "^1.9.1",
-    "react": "^15.6.1",
-    "react-addons-css-transition-group": "^15.6.2",
-    "react-bootstrap": "^0.31.3",
-    "react-dom": "^15.6.1",
-    "react-jupyter": "^0.1.0",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.13",
-    "superagent": "^3.8.2"
+    "gatsby": "^1.9.238",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-sass": "^1.0.23",
+    "gatsby-plugin-typography": "^1.7.18",
+    "react-helmet": "^5.2.0",
+    "typography-theme-moraga": "^0.15.10"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.11.1"
   }
 }
