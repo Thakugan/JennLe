@@ -5,7 +5,7 @@ import landingMobile from '../assets/landing-mobile.jpg'
 import landingDesktop from '../assets/landing-desktop.jpg'
 
 import { Heart, Club, Diamond } from '../assets/icons'
-import { Envelope, Github, LinkedIn } from '../assets/socialIcons'
+// import { Envelope, Github, LinkedIn } from '../assets/socialIcons'
 
 const IndexPage = () => (
   <div style={{ minHeight: '100%' }} className="container">
@@ -54,7 +54,7 @@ const IndexPage = () => (
 
     <footer className="contact">
       <h4>Contact Me</h4>
-      <a href="mailto:jenn.thakugan@icloud.com">
+      {/* <a href="mailto:jenn.thakugan@icloud.com">
         <Envelope className="social-icon" />
       </a>
       <a href="https://github.com/Thakugan" target="_blank">
@@ -62,7 +62,7 @@ const IndexPage = () => (
       </a>
       <a href="https://www.linkedin.com/in/thakugan/" target="_blank">
         <LinkedIn className="social-icon" />
-      </a>
+      </a> */}
     </footer>
   </div>
 )
