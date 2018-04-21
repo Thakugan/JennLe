@@ -8,7 +8,7 @@ import '../scss/jennle.scss'
 const TemplateWrapper = ({ children }) => (
   <div className="container">
     <Helmet title="Jenn Le" />
-    {/* <Header /> */}
+    <Header />
     <div className="page-wrapper">{children()}</div>
   </div>
 )
