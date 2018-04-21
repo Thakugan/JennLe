@@ -3,15 +3,12 @@
   "homepage": "http://jennle.com",
   "version": "1.0.0",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.5",
-    "@fortawesome/fontawesome-free-brands": "^5.0.10",
-    "@fortawesome/fontawesome-free-solid": "^5.0.10",
-    "@fortawesome/react-fontawesome": "0.0.18",
     "gatsby": "^1.9.238",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-sass": "^1.0.23",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-icons": "^2.2.7"
   },
   "scripts": {
     "build": "gatsby build",
