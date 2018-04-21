@@ -7,10 +7,6 @@ import landingDesktop from '../assets/landing-desktop.jpg'
 
 import { Heart, Club, Diamond } from '../assets/icons'
 
-import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
-import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin'
-import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope'
-
 const IndexPage = () => (
   <div style={{ minHeight: '100%' }} className="container">
     <div className="page landing">
@@ -58,30 +54,6 @@ const IndexPage = () => (
 
     <footer className="contact">
       <h4>Contact Me</h4>
-      <a href="mailto:jenn.thakugan@icloud.com">
-        <FontAwesomeIcon
-          icon={faEnvelope}
-          color="#979797"
-          size="2x"
-          className="social-icon"
-        />
-      </a>
-      <a href="https://github.com/Thakugan" target="_blank">
-        <FontAwesomeIcon
-          icon={faGithub}
-          color="#979797"
-          size="2x"
-          className="social-icon"
-        />
-      </a>
-      <a href="https://www.linkedin.com/in/thakugan/" target="_blank">
-        <FontAwesomeIcon
-          icon={faLinkedin}
-          color="#979797"
-          size="2x"
-          className="social-icon"
-        />
-      </a>
     </footer>
   </div>
 )
