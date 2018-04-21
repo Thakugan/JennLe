@@ -58,11 +58,12 @@
   padding: 1rem 0 2rem 0;
 
   h4 {
+    font-weight: 300;
     color: $white;
     margin: 0 0 0.75rem 0;
   }
 
-  .social-icon {
+  a {
     color: $dark-grey;
     font-size: 2rem;
     margin: 0 1rem;

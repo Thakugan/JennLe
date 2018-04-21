@@ -5,8 +5,7 @@ import landingMobile from '../assets/landing-mobile.jpg'
 import landingDesktop from '../assets/landing-desktop.jpg'
 
 import { Heart, Club, Diamond } from '../assets/icons'
-
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/lib/fa'
+import { Envelope, Github, LinkedIn } from '../assets/socialIcons'
 
 const IndexPage = () => (
   <div style={{ minHeight: '100%' }} className="container">
@@ -56,13 +55,13 @@ const IndexPage = () => (
     <footer className="contact">
       <h4>Contact Me</h4>
       <a href="mailto:jenn.thakugan@icloud.com">
-        <FaEnvelope className="social-icon" />
+        <Envelope className="social-icon" />
       </a>
       <a href="https://github.com/Thakugan" target="_blank">
-        <FaGithub className="social-icon" />
+        <Github className="social-icon" />
       </a>
       <a href="https://www.linkedin.com/in/thakugan/" target="_blank">
-        <FaLinkedin className="social-icon" />
+        <LinkedIn className="social-icon" />
       </a>
     </footer>
   </div>
