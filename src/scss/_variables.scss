@@ -1,8 +1,17 @@
+// Fonts
+// ------------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+
+$nunito: 'Nunito Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
 // Colors
 // ------------------------------------------------
 $white: #fff !default;
 $black: #000 !default;
-$dark-grey: #212626 !default;
+$dark-grey: #979797 !default;
+$grey: #d8d8d8 !default;
 $light-grey: #d3d3d3 !default;
 
 // Palette colors

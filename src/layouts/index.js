@@ -6,19 +6,10 @@ import Header from '../components/Header'
 import '../scss/jennle.scss'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="container">
     <Helmet title="Jenn Le" />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
+    <div className="page-wrapper">{children()}</div>
   </div>
 )
 
